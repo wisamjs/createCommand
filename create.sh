@@ -1,13 +1,12 @@
 #!/bin/bash
 function create(){
-
 	if [[ $1 == '--help' ]]
 		then
 		echo 'Help message!'
 	else
 		#get templates and extensions
 		#from template directory
-		template_dir=~/.templates/
+		template_dir=${PWD}/templates/
 
 		extensions=$(find $template_dir -type f | sed 's|.*\.||' | sort -u)
 		read -a arr <<<$extensions
@@ -23,7 +22,7 @@ function create(){
 		do
 			if [[ ${1: -${#var}} == $var ]]
 				then
-				cat ~/.templates/template.$var > $1;
+				cat ${template_dir}/template.$var > $1;
 			fi
 		done
 	fi
