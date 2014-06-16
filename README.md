@@ -1,13 +1,16 @@
 #Bash Function: Create
 
 ##What is it
-'create' is a terminal command that creates 1 or more files from the command line and loads a template that you specify that is associated with the extension, into the file(s).
+create is a terminal command that creates 1 or more files from the command line and loads a template that you specify that is associated with the extension, into the file(s).
 
 ##How it works
 When you use the command, the script will look at the templates folder and check to see what template files you have set, and what their extensions are. If a template file exists for the extension that you used, then that file will have the same text. If it doesn't exist, then a file will be created without a template.
 
 ##Install
-Sea doctus dissentiet ei, eros vocent ex pro, pri ne munere populo. Vel cu consul everti ponderum.
+###Basic Installation
+
+
+###Advanced Installation
 
 ##How to use
 

@@ -5,8 +5,8 @@ function create(){
 		echo 'Help message!'
 	else
 		#get templates and extensions
-		#from template directory
-		template_dir=${PWD}/templates/
+		#from templatels directory
+		template_dir=~/createCommand/templates/
 
 		extensions=$(find $template_dir -type f | sed 's|.*\.||' | sort -u)
 		read -a arr <<<$extensions
