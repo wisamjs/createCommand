@@ -8,9 +8,31 @@ When you use the command, the script will look at the templates folder and check
 
 ##Install
 ###Basic Installation
+Open terminal and type in the following:
 
+	cd ~
+	git clone https://github.com/wzaghal/createCommand.git
+	cd createCommand
+	./install.sh
+	source ~/.bash_profile
+
+You should now be able to use the create command in any directory.
 
 ###Advanced Installation
+If you don't want the entire folder in your root directory and you want to seperate the templates folder and the create.sh file, then you can do this instead:
+
+- Clone the repository
+- Move the templates folder to wherever you'd like
+- Move the create.sh file to wherever you'd like.
+- The create.sh file uses a variable called template_dir to reference the template directory. Edit the file and make sure you use an absolute path to the templates directory.
+- The install.sh file adds a line to your .bash_profile so that it reference create.sh Edit the install.sh file and make sure you use the absolute path to the create.sh file.
+- Run the install.sh file:
+		
+		./install.sh
+
+- Restart terminal, or run the following command:
+		
+		source ~/.bash_profile
 
 ##How to use
 
